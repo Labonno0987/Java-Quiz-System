@@ -1,4 +1,4 @@
-# Simple JAVA Code
+# MCQ Quiz System: A Java-based Multiple Choice Question Platform
 ## Description
 This is a simple Java-based MCQ Quiz System designed for learning and practice.It supports Admin and Student roles with separate functionalities.Admins can add MCQ questions to a JSON-based quiz bank.Students can take a 10-question random quiz and receive a score with feedback.
 
