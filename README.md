@@ -39,14 +39,14 @@ Before running the system, make sure you have:
 
 ##  How It Works
 - ### For Admin:
- - Logs in using credentials from users.json
- - Adds new questions via console input
- - Questions are saved into quiz.json
+     ##### 1. Logs in using credentials from users.json
+     ##### 2. Adds new questions via console input
+     ##### 3. Questions are saved into quiz.json
 - ### For Student:
- - Logs in using credentials from users.json
- - Gets 10 random questions from quiz.json
- - Answers questions one by one
- - Final score and performance feedback are shown
+     ##### 1. Logs in using credentials from users.json
+     ##### 2. Gets 10 random questions from quiz.json
+     ##### 3. Answers questions one by one
+     ##### 4. Final score and performance feedback are shown
    
 ## Task Checklist
 - Admin can add questions
@@ -57,7 +57,7 @@ Before running the system, make sure you have:
 
 ## System Walkthrough Video
 - [Click here to view the how the whole System Work](https://drive.google.com/file/d/18yobR3k2zsqb5r_eqIoflIZtVrK6FiDl/view?usp=sharing)  
-*(Make sure the document is public or viewable by anyone with the link)*
+
 
 
 
