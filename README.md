@@ -37,7 +37,7 @@ Before running the system, make sure you have:
 - ├── README.md
 - └── (Excluded: .idea/, build/, .gradle/, out/)
 
-##  How It Works
+##  How It Works?
 - ### For Admin:
      ##### 1. Logs in using credentials from users.json
      ##### 2. Adds new questions via console input
