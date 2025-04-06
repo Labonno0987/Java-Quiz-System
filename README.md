@@ -56,7 +56,8 @@ Before running the system, make sure you have:
 
 
 ## System Walkthrough Video
-- [Click here to view the how the whole System Work](https://drive.google.com/file/d/18yobR3k2zsqb5r_eqIoflIZtVrK6FiDl/view?usp=sharing)  
+- [Click here to view the how the Admin Portal Work](https://drive.google.com/file/d/1s2TY_1NxBOU83DE7Wk1z8HJoWsaiGdx3/view?usp=sharing)
+- [Click here to view the how the Student Portal Work](https://drive.google.com/file/d/1EsgJz-VPabgDbJeurOk49pImRE5XVLUl/view?usp=sharing)   
 
 
 
