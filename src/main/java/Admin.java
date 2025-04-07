@@ -12,16 +12,12 @@ public class Admin {
         Scanner sc = new Scanner(System.in);
         JSONParser parser = new JSONParser();
 
-        // JSON Array as a List of JSONObject, type safety for generic type.
         List<JSONObject> quizBank = new ArrayList<>();
 
-        // Try to load existing quiz.json
         try {
             FileReader reader = new FileReader("src/main/resources/quiz.json");
             Object obj = parser.parse(reader);
-            // Instead of casting to JSONArray, parse it as List<JSONObject>
             JSONArray jsonArray = (JSONArray) obj;
-            // Convert JSONArray to List<JSONObject>
             for (Object o : jsonArray) {
                 quizBank.add((JSONObject) o);
             }
@@ -54,7 +50,6 @@ public class Admin {
                 }
             }
 
-            // Use HashMap to store the question data
             HashMap<String, Object> questionMap = new LinkedHashMap<>();
             questionMap.put("question", question);
             questionMap.put("option 1", opt1);
@@ -63,7 +58,6 @@ public class Admin {
             questionMap.put("option 4", opt4);
             questionMap.put("answerkey", answerKey);
 
-            // Wrap in JSONObject and add to quizBank
             JSONObject questionObj = new JSONObject(questionMap);
             quizBank.add(questionObj);
 
@@ -74,10 +68,9 @@ public class Admin {
             if (choice.equalsIgnoreCase("q")) break;
         }
 
-        // Save updated quizBank to quiz.json
         try (FileWriter file = new FileWriter("src/main/resources/quiz.json")) {
             JSONArray jsonArrayToSave = new JSONArray();
-            jsonArrayToSave.addAll(quizBank);  // Convert List<JSONObject> back to JSONArray
+            jsonArrayToSave.addAll(quizBank);  
             file.write(jsonArrayToSave.toJSONString());
             file.flush();
             System.out.println("System:> Quiz bank saved to file!");
